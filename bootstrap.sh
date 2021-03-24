@@ -21,8 +21,8 @@ cached_time=60
 
 # Important items to monitor (can be LDOM's, nodes, cluster names, resource groups, resources, attributes etc)
 declare -a monitor
-monitor+=("ebspbh45")
-monitor+=("ebscbh45")
+monitor+=("zone1")
+monitor+=("zone2")
 
 # Import ENV systems
 monitor+=( ${MONITOR_HOSTS[@]} )
