@@ -12,14 +12,14 @@ $ for f in clval*.sh; do /bin/bash ${f} verbose; echo; done
 ```
 
 The inspection(s) performs the following:
-1. Acquires necessary configuration data and generates a cached copy in .reports
-2. Validates network configurations for all applicable resources
-  a. IPMI groups, aggregate links and underlying physical interfaces
-  b. DNS forward & reverse lookups for all defined IP and/or hostname resources
-  c. Local nsswitch lookups for all defined IP and/or hostname resources
-  d. ICMP test for all defined IP and/or hostname resources
-  e. Socket open test for all defined IP and/or hostname resources
-4. Validates disk configurations for all applicable resources
-  a. Zpool configuration in zone cluster configuration
-  b. NFS remote share validation
-  c. NFS local mount point validation
+* Acquires necessary configuration data and generates a cached copy in .reports
+* Validates network configurations for all applicable resources
+  * IPMI groups, aggregate links and underlying physical interfaces
+  * DNS forward & reverse lookups for all defined IP and/or hostname resources
+  * Local nsswitch lookups for all defined IP and/or hostname resources
+  * ICMP test for all defined IP and/or hostname resources
+  * Socket open test for all defined IP and/or hostname resources
+* Validates disk configurations for all applicable resources
+  * Zpool configuration in zone cluster configuration
+  * NFS remote share validation
+  * NFS local mount point validation
